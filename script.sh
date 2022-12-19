@@ -1,7 +1,7 @@
 #Downloading required packages
 sudo pacman -S nvidia fish ranger openssh network-manager-applet dmenu gnome-keyring nano git htop neofetch make feh ttf-dejavu alacritty xorg xorg-xinit i3-gaps pulseaudio-bluetooth discord steam
 
-#Making fish default terminal
+#Making fish default shell
 echo /usr/bin/fish | tee -a /etc/shells
 chsh -s /usr/bin/fish
 
@@ -36,15 +36,19 @@ mkdir Pictures
 cp wallpaper.jpg ~/Pictures/
 mkdir Downloads
 
-# copying .config files 
+# copying i3 config files 
 cp i3/config  ~/.config/i3/
-mkdir ~/.config/polybar/
 
+# copying htop config 
+cp htoprc ~/.config/htop/
+
+# copying polybar config
+mkdir ~/.config/polybar/
 cp polybar/config.ini ~/.config/polybar/
 cp polybar/launch.sh ~/.config/polybar/
 chmod +x ~/.config/polybar/launch.sh
 
-#configuring spotify-tui
+# configuring spotify-tui
 cp -r spotify-tui/ ~.conf/
 cp -r spotifyd/ ~/conf/
 
