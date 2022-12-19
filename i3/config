@@ -62,6 +62,10 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+#brightnessctl 
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -185,6 +189,7 @@ bindsym $mod+r mode "resize"
 exec_always feh --bg-scale Pictures/wallpaper.jpg
 exec_always ~/.config/polybar/launch.sh
 exec_always blueberry-tray
+exec_always spotifyd
 default_border pixel 1
 
 gaps inner 5

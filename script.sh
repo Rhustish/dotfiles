@@ -21,13 +21,19 @@ makepkg -si
 cd ..
 
 #Downloading required packages from AUR
-yay -S visual-studio-code-bin blueberry google-chrome qtkeychain dbus-broker brightnessctl polybar spotifyd
+yay -S visual-studio-code-bin blueberry google-chrome qtkeychain dbus-broker brightnessctl polybar spotifyd auto-cpufreq
+
+#Enabling auto-cpufreq
+sudo systemctl enable auto-cpufreq.service
+sudo systemctl start auto-cpufreq.service
+sudo cp auto-cpufreq.conf /etc/
 
 #Enabling bluetooth
 sudo systemctl enable bluetooth.service
 
-#Making the home Directory
+#Making the home Directory && copying wallpaper
 mkdir Pictures
+cp wallpaper.jpg ~/Pictures/
 mkdir Downloads
 
 # copying .config files 
