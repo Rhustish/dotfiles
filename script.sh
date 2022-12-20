@@ -1,5 +1,5 @@
 #Downloading required packages
-sudo pacman -S nvidia fish ranger openssh network-manager-applet dmenu gnome-keyring nano git htop neofetch make feh ttf-dejavu alacritty xorg xorg-xinit i3-gaps pulseaudio-bluetooth discord steam
+sudo pacman -S virualbox kernel-headers nvidia fish ranger openssh network-manager-applet dmenu gnome-keyring nano git htop neofetch make feh ttf-dejavu alacritty xorg xorg-xinit i3-gaps pulseaudio-bluetooth discord steam
 
 #Making fish default shell
 echo /usr/bin/fish | tee -a /etc/shells
@@ -27,6 +27,9 @@ yay -S visual-studio-code-bin blueberry google-chrome qtkeychain dbus-broker bri
 sudo systemctl enable auto-cpufreq.service
 sudo systemctl start auto-cpufreq.service
 sudo cp auto-cpufreq.conf /etc/
+
+#Virtualbox setup
+sudo modprobe vboxdrv
 
 #Enabling bluetooth
 sudo systemctl enable bluetooth.service
