@@ -1,5 +1,14 @@
 #Downloading required packages
-sudo pacman -S virualbox kernel-headers nvidia fish ranger openssh network-manager-applet dmenu gnome-keyring nano git htop neofetch make feh ttf-dejavu alacritty xorg xorg-xinit i3-gaps pulseaudio-bluetooth discord steam
+#sudo pacman -S virualbox kernel-headers nvidia openssh discord steam
+sudo pacman -S nano htop neofetch make
+sudo pacman -S xorg
+sudo pacman -S xorg-xinit
+sudo pacman -S fish ranger
+sudo pacman -S i3-gaps ttf-dejavu
+sudo pacman -S alacritty dmenu feh
+sudo pacman -S network-manager-applet gnome-keyring 
+
+
 
 #Making fish default shell
 echo /usr/bin/fish | tee -a /etc/shells
@@ -9,9 +18,12 @@ chsh -s /usr/bin/fish
 echo xinitrc | tee -a ~/.xinitrc
 
 #Enabling autologin
+mkdir ~/,config/fish
 echo fish | tee -a ~/.config/fish/config.fish
 
 #Configuring touchpad
+sudo mkdir /etc/X11/
+sudo mkdir /etc/X11/xorg.conf.d/
 sudo cp 30-touchpad.conf /etc/X11/xorg.conf.d/
 
 #Installing YAY
@@ -21,7 +33,7 @@ makepkg -si
 cd ..
 
 #Downloading required packages from AUR
-yay -S visual-studio-code-bin blueberry google-chrome qtkeychain dbus-broker brightnessctl polybar spotifyd auto-cpufreq
+yay -S visual-studio-code-bin blueberry google-chrome qtkeychain dbus-broker brightnessctl polybar spotifyd auto-cpufreq pulseaudio-bluetooth
 
 #Enabling auto-cpufreq
 sudo systemctl enable auto-cpufreq.service
@@ -40,9 +52,11 @@ cp wallpaper.jpg ~/Pictures/
 mkdir Downloads
 
 # copying i3 config files 
+mkdir ~/.config/i3
 cp i3/config  ~/.config/i3/
 
 # copying htop config 
+mkdir ~/.config/htop
 cp htoprc ~/.config/htop/
 
 # copying polybar config
@@ -54,5 +68,8 @@ chmod +x ~/.config/polybar/launch.sh
 # configuring spotify-tui
 cp -r spotify-tui/ ~.conf/
 cp -r spotifyd/ ~/conf/
+
+sudo pacman -S virualbox kernel-headers nvidia openssh discord steam
+
 
 sudo reboot
