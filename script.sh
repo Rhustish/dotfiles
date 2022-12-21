@@ -1,5 +1,4 @@
 #Downloading required packages
-#sudo pacman -S virualbox kernel-headers nvidia openssh discord steam
 sudo pacman -S nano htop neofetch make
 sudo pacman -S xorg
 sudo pacman -S xorg-xinit
@@ -11,19 +10,18 @@ sudo pacman -S network-manager-applet gnome-keyring
 
 
 #Making fish default shell
+mkdir ~/.config/fish
 echo /usr/bin/fish | tee -a /etc/shells
 chsh -s /usr/bin/fish
 
 #Configuring xinitrc
-echo xinitrc | tee -a ~/.xinitrc
+echo ./xinitrc | tee -a ~/.xinitrc
 
 #Enabling autologin
 mkdir ~/,config/fish
-echo fish | tee -a ~/.config/fish/config.fish
+echo ./fish | tee -a ~/.config/fish/config.fish
 
 #Configuring touchpad
-sudo mkdir /etc/X11/
-sudo mkdir /etc/X11/xorg.conf.d/
 sudo cp 30-touchpad.conf /etc/X11/xorg.conf.d/
 
 #Installing YAY
@@ -47,7 +45,7 @@ sudo modprobe vboxdrv
 sudo systemctl enable bluetooth.service
 
 #Making the home Directory && copying wallpaper
-mkdir Pictures
+mkdir ~/Pictures
 cp wallpaper.jpg ~/Pictures/
 mkdir Downloads
 
