@@ -7,7 +7,8 @@ sudo pacman -S i3-gaps ttf-dejavu
 sudo pacman -S alacritty dmenu feh
 sudo pacman -S network-manager-applet gnome-keyring 
 
-
+#making .config folder
+mkdir.config
 
 #Making fish default shell
 mkdir ~/.config/fish
@@ -18,7 +19,7 @@ chsh -s /usr/bin/fish
 echo ./xinitrc | tee -a ~/.xinitrc
 
 #Enabling autologin
-mkdir ~/,config/fish
+mkdir ~/.config/fish
 echo ./fish | tee -a ~/.config/fish/config.fish
 
 #Configuring touchpad
