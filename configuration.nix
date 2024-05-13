@@ -23,7 +23,7 @@
     };
   };
   networking.hostName = "TUBELIGHT"; # Define your hostname.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true;
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
@@ -47,8 +47,6 @@
   	htop.enable = true;
   	git.enable = true;
   	neovim.enable = true;
-  	xwayland.enable = true;
-  	
   };
 
   # Enable sound.
@@ -62,6 +60,16 @@
   	jack.enable = true;
   };
 
+  #Power Management
+  powerManagement = {
+    scsiLinkPolicy = "med_power_with_dipm";
+    enable = true;
+    cpufreq = {
+    	min = 1400000;
+    	max = 1500000;
+    };
+    cpuFreqGovernor = "powersave";
+  };
   
   hardware = {
   	opengl = {
@@ -86,17 +94,21 @@
   	    amdgpuBusId = "PCI:5:0:0";
   	    nvidiaBusId = "PCI:1:0:0";
   	  };
+  	  # dynamicBoost.enable = true;
   	};
   	openrazer = {
   	  enable = true;
   	  users = [ "rhust" ];
   	  syncEffectsEnabled = true;
-  	  	
   	};
   };
 
   # List services that you want to enable:
   services = {
+    logind = {
+      lidSwitch = "suspend-then-hibernate";
+      lidSwitchDocked = "suspend-then-hibernate";	
+    };
   	xserver = {
   		libinput.enable = true;
   		videoDrivers = [ "nvidia" "amdgpu" ];
@@ -104,6 +116,11 @@
   	upower.enable = true;
   	blueman.enable = true;
   	squeezelite.pulseAudio = true;
+  };
+
+  qt = {
+  	enable = true;
+  	platformTheme = "qt5ct";
   };
 
   xdg = {
@@ -123,8 +140,6 @@
   	icons.enable = true;
   	autostart.enable = true;
   	portal.enable = true;
-  	#portal.wlr.enable = true;
-  	#portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-kde ];
   };
 
 
@@ -201,7 +216,6 @@
     nerdfonts
     rofi-wayland
     xdg-utils
-    eww-wayland
     killall
     wallust
     cider
@@ -227,6 +241,10 @@
     auto-cpufreq
     polychromatic
     wdisplays
+    icon-library
+    iconpack-jade
+    iconpack-obsidian
+    gnumake42
   ];
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
