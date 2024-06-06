@@ -21,6 +21,7 @@ abbr .5 'cd ../../../../..'
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 abbr mkdir 'mkdir -p'
 abbr pacman 'sudo pacman'
+abbr purge "sudo pacman -Sc && yay -Yc && paccache -rk0 && rm -fr ~/.cache/yay/*"
 
 #user
 
