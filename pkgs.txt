@@ -1,0 +1,11 @@
+google-chrome visual-studio-code-bin npm nodejs docker lazydocker
+micro
+
+qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables iptables libguestfs
+
+github-cli mkinitcpio-firmware sshfs ssh unzip rustup neovim nvidia-settings ly
+
+auto-cpufreq nerd-fonts noto-fonts-emoji docker-compose
+
+sudo usermod -aG docker rhust
+sudo usermod -aG libvirt rhust
