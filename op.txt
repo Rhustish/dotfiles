@@ -1,0 +1,51 @@
+nvidia-prime
+ttf-font-awesome
+playerctl
+mpd
+eww-git
+waybar
+eww
+viu lshw
+uwufetch
+xfce-polkit
+polkit
+lxappearance gtk-chtheme
+network-manager-applet
+bluez bluez-utils blueman
+polkit-gnome
+libnotify
+xdg-desktop-portal
+flameshot dunst
+gtk4 gtk3
+gtk
+picom
+brightnessctl
+pactl
+rofi
+pywal
+nerd-fonts awesome-terminal-fonts
+lsd
+polybar
+pacman-contrib
+feh
+lm_sensors
+steam
+starship
+starfish
+wallust
+github-cli mkinitcpio-firmware sshfs ssh unzip rustup neovim nvidia-settings ly auto-cpufreq nerd-fonts noto-fonts-emoji docker-compose
+google-chrome visual-studio-code-bin npm nodejs docker lazydocker
+arandr
+nvidia-prime
+nvidia-dkms nvidia-utils nvidia-settings
+linux-headers
+fish
+neofetch
+yay pacman -S nerd-fonts noto-fonts-emoji i3-gaps dmenu kitty xorg ly
+i3-gaps dmenu kitty xorg ly
+pacman -S hyprland
+ly hyprland waybar rofi dolphin
+xclip
+micro
+
+
