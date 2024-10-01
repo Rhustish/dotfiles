@@ -1,0 +1,47 @@
+xorg xdg-user-dirs xdg-user-dirs-gtk  xdg-utils
+copyq
+virt-manager
+pasystray
+nvim
+clang
+clang clangd
+rustup
+i3blocks
+gnome-keyring
+fzf
+jq p7zip ffmpegthumbnailer  ffmpeg fd ripgrep poppler feh
+yazi
+noto-fonts noto-fonts-cjk ttf-dejavu ttf-liberation ttf-opensans
+playerctl pactl
+polkit-gnome
+xfce-polkit
+micro
+ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+pavucontrol
+pulseaudio-jack
+pulseaudio-jack  pavucontrol
+qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables iptables libguestfs
+xclip
+linux-headers
+lsd
+starship
+polkit
+ttf-liberation nerd-fonts
+ttf-liberation nerdfonts
+xorg
+xorg-xauth
+fish ly
+fish neovim kitty i3 dmenu
+neovim
+lorien-bin
+lorien
+wallust
+feh pywal
+feh wallust
+wallues
+nerd-fonts  nerd-fonts-complete-mono-glyphs noto-fonts-emoji
+gnome-themes-extra adwaita-qt5 adwaita-qt6
+xdotool wmctrl libinput-gestures
+freetype2-cleartype
+android-studio genymotion
+nvidia-dkms nvidia-prime ttf-font-awesome xclip awesome-terminal-fonts bluez blueman bluez-utils flameshot xdg-desktop-portal nvidia-tweaks pacman-contrib nvidia-utils nvidia-settings pnpm npm nodejs mkinitcpio-firmware sshfs ssh unzip auto-cpufreq noto-fonts-emoji docker-compose docker brightnessctl dunst libnotify network-manager-applet autotiling neofetch
