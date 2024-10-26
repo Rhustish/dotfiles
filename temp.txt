@@ -1,0 +1,54 @@
+yay -S blueberry
+yay -S bluez
+yay -S postman
+yay -S arandr ollama
+history | grep "yay -S" | cat > temp.txt
+history | grep "yay -S" | echo > temp.txt
+history | grep "yay -S " | echo > temp.txt
+yay -S polkit polkit-gnome
+yay -S polkit
+yay -S python-pywal
+yay -S dunst flameshot
+yay -S nerd-fonts nerd-fonts-complete-mono-glyphs noto-fonts-emoji polkit-gnome starship lsd linux-headers copyq pavucontrol yazi vlc fzf pasystray xdg-user-dirs dmenu google-chrome
+yay -S nerd-fonts nerd-fonts-complete-mono-glyphs noto-fonts-emoji polkit-gnome starship lsd linux-headers copyq pavucontrol yazi vlc fzf pasystray xdg-user-dirs
+yay -S nvidia-dkms nvidia-prime ttf-font-awesome xclip awesome-terminal-fonts bluez blueman bluez-utils flameshot xdg-desktop-portal nvidia-tweaks pacman-contrib nvidia-utils nvidia-settings pnpm npm nodejs mkinitcpio-firmware sshfs ssh unzip auto-cpufreq noto-fonts-emoji docker-compose docker brightnessctl dunst libnotify network-manager-applet autotiling neofetch
+sudo pacman -S libreoffice
+sudo pacman -S libre-office
+sudo pacman -S ripgrep
+sudo pacman -S vscode-json-languageserver :Q
+sudo pacman -S vscode-javascript-languageserver
+sudo pacman -S vscode-js-languageserver
+sudo pacman -S eslint
+sudo pacman -Sc && yay -Yc && paccache -rk0 && rm -fr ~/.cache/yay/*
+sudo pacman -S deno
+sudo pacman -S vscode-html-languageserver
+sudo pacman -S vscode-css-languageserver
+sudo pacman -S typescript-language-server
+sudo pacman -S pulseaudio-bluetooth gnome-bluetooth
+sudo pacman -S blueman
+sudo pacman -S bluez-qt5
+sudo pacman -S github-cli
+sudo pacman -S gh-api
+sudo pacman -S steam
+sudo pacman -S wrandr
+sudo pacman -Syuu
+history | grep "pacman -S" | cat >> temp.txt
+sudo pacman -S tree
+sudo pacman -S raylib
+sudo pacman -S thunar
+sudo pacman -S mtpfs gvfs-mtp
+sudo pacman -S mtp-tools gvfs-mtp
+sudo pacman -S picom
+sudo pacman -S brightnessctl
+sudo pacman -S cmake
+sudo pacman -S make
+sudo pacman -S clang
+sudo pacman -S clangd
+sudo pacman -S gnome-keyring
+sudo pacman -S rofi
+sudo pacman -S dmenu
+sudo pacman -S dmeny
+sudo pacman -S htop
+sudo pacman -S polybar
+sudo pacman -S flameshot
+pacman -S flameshot
