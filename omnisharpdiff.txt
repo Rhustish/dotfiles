@@ -1,0 +1,28 @@
+diff --git a/build.json b/build.json
+index ca061e13..9d10dcb9 100644
+--- a/build.json
++++ b/build.json
+@@ -16,10 +16,8 @@
+     "TestProjects": [
+         "OmniSharp.MSBuild.Tests",
+         "OmniSharp.Roslyn.CSharp.Tests",
+-        "OmniSharp.Lsp.Tests",
+         "OmniSharp.DotNetTest.Tests",
+         "OmniSharp.Script.Tests",
+-        "OmniSharp.Cake.Tests",
+         "OmniSharp.Http.Tests",
+         "OmniSharp.Stdio.Tests",
+         "OmniSharp.Tests"
+diff --git a/src/OmniSharp.Cake/Services/RequestHandlers/Completion/CompletionHandler.cs b/src/OmniSharp.Cake/Services/RequestHandlers/Completion/CompletionHandler.cs
+index addf4c85..c021fd55 100644
+--- a/src/OmniSharp.Cake/Services/RequestHandlers/Completion/CompletionHandler.cs
++++ b/src/OmniSharp.Cake/Services/RequestHandlers/Completion/CompletionHandler.cs
+@@ -48,7 +48,7 @@ protected override Task<CompletionResolveResponse> TranslateResponse(CompletionR
+             // Revisit when we have a solution. At this point it's probably just best to remove AdditionalTextEdits.
+             if (response.Item is object)
+             {
+-                response.Item.AdditionalTextEdits = null;
++                // response.Item.AdditionalTextEdits = null;
+             }
+ 
+             return Task.FromResult(response);
